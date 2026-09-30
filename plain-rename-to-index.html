@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+  =====================================================================
+  S617 PORTFOLIO TEMPLATE
+  How to use: edit every spot marked  <!-- EDIT: ... -- >  below.
+  You do NOT need to touch the <style> block unless you want to change
+  the look. When you're done, commit this file to your `username.github.io`
+  the look. Feel free to use your favorit ai to edit or modify. 
+  When you're done, commit this file to your `username.github.io`
+  repo and enable GitHub Pages (Settings -> Pages -> Source: main).
+  ===================================================================== 
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- EDIT: your name in the browser tab title -->
+  <title>Your Name - Cybersecurity Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper:      #f5f7f8;
+      --surface:    #ffffff;
+      --ink:        #17242e;
+      --ink-soft:   #566571;
+      --accent:     #0e7c86;
+      --accent-strong: #0a5a62;
+      --line:       #dde4e7;
+      --display: "Space Grotesk", system-ui, sans-serif;
+      --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper:    #10181e;
+        --surface:  #16222b;
+        --ink:      #e7edf0;
+        --ink-soft: #9fb0ba;
+        --accent:   #4fc7d1;
+        --accent-strong: #7ad8e0;
+        --line:     #26343d;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: clamp(2.5rem, 6vw, 5rem) 1.4rem 4rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-strong); text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+    /* ---- hero ---- */
+    .hero h1 {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: clamp(2.4rem, 8vw, 3.6rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+    }
+    .hero .role {
+      font-family: var(--display);
+      font-weight: 500;
+      color: var(--accent);
+      font-size: 1.15rem;
+      margin: 0 0 1.25rem;
+    }
+    .hero .lede { color: var(--ink-soft); max-width: 34rem; margin: 0 0 1.75rem; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-weight: 500; }
+
+    /* ---- sections ---- */
+    section { margin-top: 3.25rem; }
+    h2 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    p { margin: 0 0 1rem; }
+
+    /* ---- skills ---- */
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+    .tags li {
+      font-size: 0.9rem;
+      color: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.3rem 0.85rem;
+    }
+
+    /* ---- work (a "findings list", not cards) ---- */
+    .entry { padding: 1.4rem 0; border-top: 1px solid var(--line); }
+    .entry:first-of-type { border-top: none; padding-top: 0; }
+    .entry h3 { font-family: var(--display); font-weight: 600; font-size: 1.2rem; margin: 0 0 0.35rem; }
+    .entry p { color: var(--ink-soft); margin: 0 0 0.6rem; }
+    .entry .meta { font-size: 0.9rem; color: var(--ink-soft); }
+    .entry .meta span { color: var(--ink); }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="hero">
+      <!-- EDIT: your name -->
+      <h1>Your Name</h1>
+      <!-- EDIT: your focus / what you're training toward -->
+      <p class="role">Cybersecurity Student .Aspiring SOC Analyst</p>
+      <!-- EDIT: one or two honest sentences about you -->
+      <p class="lede">
+        Cybersecurity student at Hudson County Community College building hands-on
+        skills in network defense and threat detection. I document everything I build.
+      </p>
+      <nav class="contacts" aria-label="Contact links">
+        <!-- EDIT: your links. Delete any you don't want public. Avoid a phone number. -->
+        <a href="https://github.com/your-username">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-handle">LinkedIn</a>
+        <a href="mailto:your-dedicated-email@example.com">Email</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <!-- EDIT: a short paragraph. Be specific about what you're learning and doing. -->
+        <p>
+          I'm in my second year of the cybersecurity program at HCCC, where I work
+          through labs in the S617 lab and turn each one into a documented writeup.
+          I'm most interested in defensive security - reading logs, spotting anomalies,
+          and understanding how attacks actually unfold so I can stop them.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills &amp; Tools</h2>
+        <!-- EDIT: add or remove skills. Keep them honest - things you've actually used. -->
+        <ul class="tags">
+          <li>Linux</li>
+          <li>Python</li>
+          <li>Bash</li>
+          <li>Wireshark</li>
+          <li>nmap</li>
+          <li>Git &amp; GitHub</li>
+          <li>Networking</li>
+        </ul>
+      </section>
+
+      <section id="work">
+        <h2>Selected Work</h2>
+
+        <!-- EDIT: one entry per project or lab writeup. Copy the block to add more. -->
+        <article class="entry">
+          <h3>Network Reconnaissance Lab</h3>
+          <p>
+            Mapped an isolated lab network with nmap, identified open services, and wrote
+            up the findings and how I'd remediate them.
+          </p>
+          <p class="meta">
+            <span>Tools:</span> nmap, Wireshark &nbsp;·&nbsp;
+            <a href="https://github.com/your-username/your-writeup-repo">View writeup</a>
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3>Web Vulnerability Report</h3>
+          <p>
+            Assessed an intentionally vulnerable web app, documented each finding with a
+            severity rating, evidence, and a mitigation.
+          </p>
+          <p class="meta">
+            <span>Tools:</span> Burp Suite &nbsp;·&nbsp;
+            <a href="https://github.com/your-username/your-writeup-repo">View writeup</a>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Keep this line - it links your work back to the program. -->
+      Built as part of the Cybersecurity Lab (S617) at Hudson County Community College.
+    </footer>
+
+  </div>
+</body>
+</html>
